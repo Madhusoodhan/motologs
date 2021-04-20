@@ -1,0 +1,2 @@
+# motologs
+Motorcycle travel diary
