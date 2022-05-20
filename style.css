@@ -2,16 +2,16 @@ nav {
     border-bottom: 1px solid black;
 }
 
-.crumbs ol {
+.navLinks ol {
     list-style-type: none;
     padding-left: 0;
 }
 
-.crumb {
+.navLink {
     display: inline-block;
 }
 
-.crumb a::after {
+.navLink a::after {
     display: inline-block;
     color: #000;
     content: '>';
