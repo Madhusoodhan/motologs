@@ -1,0 +1,26 @@
+{
+  "name": "motologs",
+  "version": "1.0.0",
+  "description": "motorcycle travel diary",
+  "main": "home.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/Madhusoodhan/motologs.git"
+  },
+  "author": "Madhusoodhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Madhusoodhan/motologs/issues"
+  },
+  "homepage": "https://github.com/Madhusoodhan/motologs#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

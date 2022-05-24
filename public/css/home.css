@@ -1,0 +1,50 @@
+body {
+    margin : 0;
+    background-image: url("../images/Ooty/Ooty-Green-Hills.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+nav {
+    border-bottom: 0.5px solid black;
+    overflow: hidden;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(161, 210, 87);
+}
+
+.navLinks ul {
+    list-style: none;
+    margin : 0;
+    padding: 0;
+}
+
+.navLink {
+    display: inline-block;
+    font-size: 100%;
+    font-weight: bold;
+    width : 20%;
+    margin : 0;
+    padding: 1% 2% 1% 2%;
+    text-align: center;
+    opacity: 100%;
+    cursor: pointer;
+}
+
+
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-family: 'sans-serif';
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 400%;
+    text-align: center;
+    margin-top: 10%;
+}
+
