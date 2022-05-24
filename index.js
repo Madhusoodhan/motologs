@@ -8,10 +8,6 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 console.log(quotes.getQuote())
 
-app.get("/", (req, res) => {
-    res.render("home");
-});
-
 app.get("/logs", (req, res) => {
     res.render("logs/index");
 });
