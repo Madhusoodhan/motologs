@@ -8,6 +8,10 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 console.log(quotes.getQuote())
 
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
 app.get("/logs", (req, res) => {
     res.render("logs/index");
 });
