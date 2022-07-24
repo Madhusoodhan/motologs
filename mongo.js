@@ -9,7 +9,7 @@ async function main(){
         console.log("Successfully connect to database!");
     } catch (error) {
         console.error(error)
-    } finally() {
+    } finally {
         await client.close();
     }
 
