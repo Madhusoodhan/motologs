@@ -2,9 +2,13 @@ const express = require("express");
 const app = express();
 const path = require('path');
 const quotes = require("./quotes");
+const mongoConnectionManager = require("./mongoConnectionManager");
 
 app.set('view engine', 'ejs');
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'public')));
+// Set 'views' directory for any views 
+// being rendered res.render()
+app.set('views', path.join(__dirname, 'views'));
 
 console.log(quotes.getQuote())
 
@@ -13,7 +17,13 @@ app.get("/", (req, res) => {
 });
 
 app.get("/logs", (req, res) => {
+    mongoConnectionManager.connectToMongoDb().then(() => {
+        console.log("Getting logs...");
+     });
     res.render("logs/index");
+    mongoConnectionManager.closeMongoDbConnection().then(() => {
+        console.log("Displayed all logs!");
+    });
 });
 
 app.use((req, res) => {
