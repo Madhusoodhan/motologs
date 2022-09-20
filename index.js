@@ -21,7 +21,8 @@ app.get("/", (req, res) => {
 app.get("/logs", async (req, res) => {
     try {
         const allLogs = await getAllLogs();
-        res.render("logs/index" , allLogs);
+        res.render("logs/index" , {allLogs : allLogs});
+        
     } catch (error) {
         console.error("Failed to get all logs! " + error);
     }

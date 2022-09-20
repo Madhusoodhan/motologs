@@ -22,7 +22,8 @@ const getAllLogs = async function() {
         const cursor = client.db("Motologs").collection("logs").find();
         const allLogs = await cursor.toArray();
         //if empty throw error
-        console.log("Got all logs : " + allLogs);
+        console.log("Got all logs : " + JSON.stringify(allLogs) + typeof(allLogs));
+        return allLogs;
         
     } catch (error) {
         console.error("Failed to get all logs! " + error);
